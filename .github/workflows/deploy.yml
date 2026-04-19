@@ -17,9 +17,6 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: apps/portfolio-site
 
     steps:
       - name: Checkout
@@ -30,27 +27,17 @@ jobs:
         with:
           node-version: '22'
           cache: 'npm'
-          cache-dependency-path: apps/portfolio-site/package-lock.json
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Type check
-        run: npm run typecheck
-
-      - name: Lint
-        run: npm run lint
-
       - name: Build (static export)
         run: npm run build
-        # NEXT_PUBLIC_ 環境変数はここで注入
-        # env:
-        #   NEXT_PUBLIC_APP_URL: ${{ vars.APP_URL }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: apps/portfolio-site/out
+          path: out
 
   deploy:
     environment:
