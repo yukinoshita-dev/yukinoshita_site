@@ -1,13 +1,8 @@
 export const siteData = {
   name: 'Yuu Kinoshita',
   nameJp: '木下 悠',
-<<<<<<< HEAD
   email: 'yukinoshita.free@gmail.com',
   github: 'https://github.com/yukinoshita-dev',
-=======
-  email: 'hello@example.com',           // ← メールアドレスを設定
-  github: 'https://github.com/yourusername', // ← GitHubアカウントを設定
->>>>>>> 7696c9290e125be82bc93da9108765291b054098
   location: '福島県',
   status: '案件募集中',
 
