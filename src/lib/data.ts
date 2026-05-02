@@ -22,6 +22,7 @@ export const siteData = {
   skills: [
     { category: 'Backend',  name: 'C# / VB.NET (.NET)',      level: 92, label: 'Expert' },
     { category: 'Backend',  name: 'Node.js / TypeScript',    level: 78, label: 'Advanced' },
+    { category: 'AI Dev',   name: 'AI-Driven Development',   level: 78, label: 'Advanced' },
     { category: 'Frontend', name: 'HTML / CSS / Bootstrap',  level: 85, label: 'Expert' },
     { category: 'Frontend', name: 'JavaScript',              level: 85, label: 'Expert' },
     { category: 'Frontend', name: 'Next.js / React',         level: 75, label: 'Advanced' },
@@ -38,7 +39,7 @@ export const siteData = {
       title: '業務システム開発（業務委託・継続中）',
       desc: '複数クライアントと業務委託契約にて、C# / .NET による業務系システムの設計・開発・テストを担当。要件定義から実装・運用まで一気通貫で対応中。既存システムの機能追加・改修から新規開発まで幅広く対応。',
       tags: ['C# / .NET', 'VB.NET', 'Oracle', 'SQL Server', 'PostgreSQL'],
-      link: '#',
+      link: '',
       linkLabel: 'Closed',
     },
     {
@@ -46,7 +47,7 @@ export const siteData = {
       title: '他社パッケージ移行・DX推進支援',
       desc: 'クライアントの基幹システムを他社パッケージへ移行する支援を担当。業務フロー分析・要件整理から移行設計・テストまで一貫対応。データ移行件数 数万件規模。並行してペーパーレス化など DX推進提案も実施。',
       tags: ['C# / .NET', 'PostgreSQL', 'DX推進', '要件定義'],
-      link: '#',
+      link: '',
       linkLabel: 'Closed',
     },
     {
@@ -54,7 +55,7 @@ export const siteData = {
       title: '社内業務効率化ツール開発',
       desc: '申請・承認フローをシステム化し、月30時間超の手作業工数を削減。業務改善効果が評価され社内表彰受賞。Excel VBAによるデータ集計自動化も並行実施し、集計作業を1/10以下に短縮。',
       tags: ['C# / .NET', 'VBA', 'SQL Server', '業務改善'],
-      link: '#',
+      link: '',
       linkLabel: 'Closed',
     },
     {
@@ -62,7 +63,7 @@ export const siteData = {
       title: '自治体向け業務システム開発・統括',
       desc: '複数自治体向け業務システムの開発・保守を6年間担当。社内システム統括リーダーとして設計方針策定・レガシーシステムのモダン化を推進。新人エンジニア向け技術研修の講師も兼務。',
       tags: ['C# / .NET', 'VB.NET', 'Oracle', 'SQL Server', 'Azure'],
-      link: '#',
+      link: '',
       linkLabel: 'Closed',
     },
     {
@@ -70,7 +71,7 @@ export const siteData = {
       title: 'Excelマクロ・VBAによる業務自動化',
       desc: '請求書作成・勤怠集計・データ転記など定型業務をExcel VBAで自動化。複数シートをまたぐ集計処理や外部システムとのデータ連携マクロを構築。担当者の作業時間を週8時間以上削減した実績あり。',
       tags: ['VBA', 'Excel', '業務自動化', 'マクロ開発'],
-      link: '#',
+      link: '',
       linkLabel: 'Closed',
     },
     {
@@ -78,7 +79,7 @@ export const siteData = {
       title: 'Windows Serverインフラ構築・運用',
       desc: '社内および顧客向けWindows Server環境の構築・運用管理を4年間担当。Active Directory・IIS・ファイルサーバーの設計から障害対応・定期保守まで一貫して対応。',
       tags: ['Windows Server', 'Active Directory', 'IIS', 'Azure'],
-      link: '#',
+      link: '',
       linkLabel: 'Closed',
     },
     {
@@ -86,7 +87,7 @@ export const siteData = {
       title: 'Oracleデータベース設計・チューニング',
       desc: '自治体向け業務システムのOracle DB論理・物理設計を担当。インデックス最適化・実行計画分析によるクエリチューニングで、処理時間を大幅短縮した実績あり。8年間にわたり実務で設計・保守を継続。',
       tags: ['Oracle', 'SQL', 'DB設計', 'チューニング'],
-      link: '#',
+      link: '',
       linkLabel: 'Closed',
     },
     {
@@ -94,7 +95,7 @@ export const siteData = {
       title: 'WPFデスクトップアプリケーション',
       desc: 'MVVMパターンを採用したWPFアプリを個人開発。データバインディング・コマンドパターンによる設計で、保守性の高いデスクトップツールを実装。C# 8年の知見を活かした実用的なツール。',
       tags: ['C# / .NET', 'WPF', 'MVVM', 'SQLite'],
-      link: '#',
+      link: '',
       linkLabel: 'Private',
     },
     {
@@ -102,16 +103,24 @@ export const siteData = {
       title: 'Webアプリケーション開発（個人）',
       desc: 'Ruby on Railsを用いた個人開発Webアプリ。MVC設計・RESTful API実装・PostgreSQLでのデータ設計まで一貫して構築。フロントはBootstrap + JavaScriptで実装。',
       tags: ['Ruby on Rails', 'PostgreSQL', 'Bootstrap', 'JavaScript'],
-      link: '#',
+      link: '',
       linkLabel: 'Private',
     },
     {
       num: '010',
       title: 'Portfolio Site',
-      desc: '本サイト。Next.js 静的エクスポート × GitHub Pages で公開。GitHub Actions による自動デプロイ、Tailwind CSS v4 によるインタラクション実装。',
-      tags: ['Next.js', 'TypeScript', 'Tailwind v4', 'GitHub Pages', 'GitHub Actions'],
-      link: 'https://github.com/yukinoshita-dev',
-      linkLabel: 'GitHub',
+      desc: '本サイト。AI駆動開発を前提に、訴求設計・実装・レビュー・改善を短いサイクルで回すためのポートフォリオ。Next.js 静的エクスポート × GitHub Pages で公開し、GitHub Actions による自動デプロイまで整備。',
+      tags: ['AI-Driven Dev', 'Next.js', 'TypeScript', 'GitHub Pages', 'GitHub Actions'],
+      link: 'https://yu-engineer.dev/',
+      linkLabel: 'Portfolio',
+    },
+    {
+      num: '011',
+      title: '営業車両管理システム',
+      desc: '営業車両の管理を効率化するシチュエーションのWEBシステム。AI駆動開発を前提に、訴求設計・実装・レビュー・改善を短いサイクルで回すためのポートフォリオ。Next.js 静的エクスポート × フロントエンドを AWS Amplify バックエンドを AWS Lambda で公開し、GitHub Actions による自動デプロイまで整備。',
+      tags: ['AI-Driven Dev', 'Next.js', 'TypeScript', 'AWS Amplify', 'AWS Lambda', 'Neon(PostgreSQL)', 'GitHub Actions'],
+      link: 'https://cardelivery.yu-engineer.dev/',
+      linkLabel: 'Portfolio',
     },
   ],
 
@@ -142,11 +151,11 @@ export const siteData = {
     },
   ],
   hero: {
-    bgText: 'FULLSTACK',
+    bgText: '',
     counter: '[ 01 / 05 ]',
-    eyebrow: 'Freelance Engineer — 業務システム / Web開発',
-    tagline: '業務システムからWeb開発まで — 要件定義から運用まで一貫対応',
-    stack: 'C# / TypeScript / Azure',
+    eyebrow: 'AI-Driven Engineer — 業務システム改善 / レガシー刷新',
+    tagline: '業務理解とAI駆動開発で、既存システムの改善を速く、堅く、現実的に進めます',
+    stack: 'C# / TypeScript / AI Dev',
   },
 
   contact: {

@@ -86,8 +86,8 @@ function Hero() {
         <p className="hero-person">{siteData.nameJp} <span>{siteData.name}</span></p>
         <p className="hero-eyebrow">{siteData.hero.eyebrow}</p>
         <h1 className="hero-name">
-          Full-Stack<br />
-          <em>Engineer</em>
+          AI-Driven<br />
+          <em>Modernization</em>
         </h1>
         <p className="hero-tagline">{siteData.hero.tagline}</p>
         <div className="hero-meta">
@@ -179,7 +179,11 @@ function Works() {
                 ))}
               </div>
             </div>
-            <a href={link} className="work-link">{linkLabel}</a>
+            {link ? (
+              <a href={link} className="work-link">{linkLabel}</a>
+            ) : (
+              <span className="work-link disabled">{linkLabel}</span>
+            )}
           </div>
         ))}
       </div>
@@ -228,7 +232,6 @@ function Contact() {
       </a>
       <div className="contact-links reveal">
         <a href={siteData.github} target="_blank" rel="noreferrer">GitHub</a>
-        <a href="#">Resume</a>
       </div>
     </section>
   )
@@ -237,43 +240,10 @@ function Contact() {
 /* ── Page ── */
 export default function HomePage() {
   const mainRef = useRef<HTMLElement>(null)
-  const cursorRef = useRef<HTMLDivElement>(null)
   useScrollAnimations(mainRef)
-
-  useEffect(() => {
-    if (window.matchMedia('(pointer: coarse)').matches) return
-    const cursor = cursorRef.current
-    if (!cursor) return
-    cursor.style.display = 'block'
-    let raf = 0
-    const move = (e: MouseEvent) => {
-      cancelAnimationFrame(raf)
-      raf = requestAnimationFrame(() => {
-        cursor.style.left = e.clientX + 'px'
-        cursor.style.top = e.clientY + 'px'
-      })
-    }
-    document.addEventListener('mousemove', move)
-    const targets = document.querySelectorAll('a, button, .skill-item, .work-item')
-    const addHover = () => cursor.classList.add('hover')
-    const removeHover = () => cursor.classList.remove('hover')
-    targets.forEach((t) => {
-      t.addEventListener('mouseenter', addHover)
-      t.addEventListener('mouseleave', removeHover)
-    })
-    return () => {
-      cancelAnimationFrame(raf)
-      document.removeEventListener('mousemove', move)
-      targets.forEach((t) => {
-        t.removeEventListener('mouseenter', addHover)
-        t.removeEventListener('mouseleave', removeHover)
-      })
-    }
-  }, [])
 
   return (
     <>
-      <div ref={cursorRef} id="cursor" aria-hidden="true" />
       <Nav />
       <main ref={mainRef}>
         <Hero />

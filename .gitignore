@@ -3,7 +3,10 @@ node_modules/
 .env*
 tsconfig.tsbuildinfo
 CLAUDE.md
+AGENTS.md
 spec.md
 task.md
 tasks.md
 out/
+image.png
+dev-server.*

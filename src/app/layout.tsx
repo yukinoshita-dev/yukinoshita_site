@@ -2,12 +2,12 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Portfolio — Fukushima Full-Stack Engineer',
+  title: 'Portfolio — AI-Driven Modernization Engineer',
   description:
-    '福島県在住のフリーランスエンジニア。TypeScript / Node.js / AWS を軸に業務システム開発からクラウドインフラまで対応。',
+    '福島県在住のフリーランスエンジニア。業務システム改善、レガシー刷新、AI駆動開発を軸に、要件整理から実装・運用まで対応。',
   openGraph: {
-    title: 'Portfolio — Fukushima Full-Stack Engineer',
-    description: 'TypeScript / Next.js / AWS — 業務システム開発のフリーランスエンジニア',
+    title: 'Portfolio — AI-Driven Modernization Engineer',
+    description: '業務システム改善 / レガシー刷新 / AI駆動開発に対応するフリーランスエンジニア',
     locale: 'ja_JP',
     type: 'website',
   },
